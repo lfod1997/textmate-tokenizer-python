@@ -102,7 +102,7 @@ def tokenize(paths: list, syntax: str = ''):
     except FileNotFoundError as e:
         raise RuntimeError('cannot run Node.js, please run installation script first') from e
     except subprocess.CalledProcessError as e:
-        raise RuntimeError('JavaScript exception occurred') from 
+        raise RuntimeError('JavaScript exception occurred') from e
     result: list[list[dict]] = list()
     for result_line in bytes.decode(result_bytes).splitlines():
         result.append(json.loads(result_line))
