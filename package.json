@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "vscode-oniguruma": "^1.5.1",
+    "vscode-textmate": "^5.4.1"
+  }
+}

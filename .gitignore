@@ -1,0 +1,6 @@
+/coverage/
+/node_modules/
+/out/
+/**/__pycache__/
+*.lsif
+resources/onig.wasm
